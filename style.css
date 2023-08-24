@@ -23,7 +23,7 @@ p {
 
 .homePageBodyLeft {
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 50%;
     margin-top: 5%;
     text-align: left;
     font-size: 20px;
@@ -31,7 +31,7 @@ p {
 }
 
 .homePageBodyRight {
-    margin-left: 5%;
+    margin-left: 50%;
     margin-right: 5%;
     margin-top: 5%;
     text-align: right;
@@ -46,12 +46,12 @@ p {
 /* Dracula Themed links */
 
 a:hover {
-    color: #ff79c6;
+    color: #8be9fd !important;
 }
 
 
 a:visited {
-    color: #bd93f9;
+    color: #ff79c6;
 }
 
 a:link {
@@ -115,8 +115,8 @@ header {
     cursor: pointer;
     width: 2rem;
     height: 2rem;
-    right: 1rem;
-    top: 1rem;
+    right: 1.5rem;
+    top: 1.5rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

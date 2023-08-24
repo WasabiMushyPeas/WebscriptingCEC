@@ -27,6 +27,7 @@ p {
     margin-top: 5%;
     text-align: left;
     font-size: 20px;
+    line-height: 1.4;
     color: #f8f8f2;
 }
 
@@ -36,6 +37,7 @@ p {
     margin-top: 5%;
     text-align: right;
     font-size: 20px;
+    line-height: 1.4;
     color: #f8f8f2;
 }
 
@@ -64,6 +66,12 @@ a:link {
 
 /* Dracula Themed Hamberger Menu */
 
+.linksInBurger {
+    padding: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 a.menuText {
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
@@ -71,7 +79,7 @@ a.menuText {
     font-weight: bold;
     text-decoration: none;
     font-size: 40px;
-    margin: 30%;
+    margin-bottom: 15%;
     text-align: center;
 }
 
@@ -91,7 +99,7 @@ header {
     background: #44475a;
     opacity: 98%;
     width: 15%;
-    height: 65%;
+    height: 40%;
     position: fixed;
     right: 0;
     transition-timing-function: cubic-bezier(10, 2, 3, 1);

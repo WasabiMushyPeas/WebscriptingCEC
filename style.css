@@ -16,6 +16,17 @@ h1 {
     font-size: 60px;
 }
 
+h2 {
+    color: #bd93f9;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5%;
+    margin-right: 70%;
+    margin-top: 5%;
+    text-align: right;
+    font-size: 60px;
+}
+
 p {
     color: #f8f8f2;
     font-family: 'Roboto', sans-serif;

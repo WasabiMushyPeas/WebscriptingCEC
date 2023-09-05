@@ -7,8 +7,7 @@ body {
 
 h1 {
     color: #bd93f9;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', monospace;
     margin-left: 50%;
     margin-right: 10%;
     margin-top: 5%;
@@ -76,7 +75,7 @@ a:link {
 
 
 
-/* Dracula Themed Hamberger Menu */
+/* Dracula Themed Hamburger Menu */
 
 .linksInBurger {
     padding: 20%;

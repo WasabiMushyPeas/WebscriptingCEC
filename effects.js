@@ -1,4 +1,4 @@
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~!@#$%^&*()_+`1234567890-=[]{}|;':,./<>?";
 
 let interval = null;
 
@@ -7,9 +7,13 @@ document.querySelector("h1").onmouseover = event => {
     clearInterval(interval);
     
     interval = setInterval(() => {
+
         event.target.innerText = event.target.innerText.split("").map((letter, index) => {
             if(index < iteration) {
                 return event.target.dataset.value[index];
+            }
+            if(event.target.dataset.value[index] == " "){
+                return " ";
             }
             return letters[Math.floor(Math.random() * 26)]
         }).join("");

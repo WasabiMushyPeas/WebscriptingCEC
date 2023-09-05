@@ -42,7 +42,7 @@ p {
     color: #f8f8f2;
 }
 
-.homePageBodyRight {
+/* .homePageBodyRight {
     margin-left: 50%;
     margin-right: 5%;
     margin-top: 5%;
@@ -50,7 +50,7 @@ p {
     font-size: 20px;
     line-height: 1.4;
     color: #f8f8f2;
-}
+} */
 
 
 
@@ -101,12 +101,14 @@ a.menuText {
     justify-content: center;
     align-items: center;
     display: flex;
-    transition: 0.3s;
+    margin-bottom: 0.2rem;
+    transition: 1s;
 }
 
 .menuListing:hover {
     background-color: #6272a4;
 }
+
 
 * {
     margin: 0;
@@ -131,12 +133,13 @@ header {
     z-index: 0;
     border-radius: 20px;
     transition: 1s;
-    padding-top: 3rem;
+    padding-top: 3.5rem;
     padding-bottom: 1rem;
     padding-right: 2rem;
     justify-content: center;
     align-items: center;
 }
+
 
 #menyAvPaa {
     display: none;
@@ -187,4 +190,21 @@ header {
 
 #menyAvPaa:checked~#burger>div:nth-child(3) {
     transform: translateY(-14px) rotate(-45deg);
+}
+
+
+/* Class stuff */
+.flexDemo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #bd93f9;
+}
+
+#sub1 {
+    border: 5px solid #ff79c6;
+}
+
+#sub2 {
+    border: 5px solid #ff79c6;
 }

@@ -32,27 +32,6 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-.homePageBodyLeft {
-    margin-left: 5%;
-    margin-right: 50%;
-    margin-top: 5%;
-    text-align: left;
-    font-size: 20px;
-    line-height: 1.4;
-    color: #f8f8f2;
-}
-
-.homePageBodyRight {
-    margin-left: 50%;
-    margin-right: 5%;
-    margin-top: 5%;
-    text-align: right;
-    font-size: 20px;
-    line-height: 1.4;
-    color: #f8f8f2;
-}
-
-
 
 
 
@@ -70,8 +49,6 @@ a:visited {
 a:link {
     color: #bd93f9;
 }
-
-
 
 
 
@@ -190,4 +167,19 @@ header {
 
 #menyAvPaa:checked~#burger>div:nth-child(3) {
     transform: translateY(-14px) rotate(-45deg);
+}
+
+
+/* Class stuff */
+.flexDemo {
+    border: 5px solid #bd93f9;
+    display: flex;
+}
+
+#sub1 {
+    border: 5px solid #ff79c6;
+}
+
+#sub2 {
+    border: 5px solid #ff79c6;
 }

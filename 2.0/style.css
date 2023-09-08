@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --text: #e7eff3;
+    --background: #080e11;
+    --primary: #92b5c9;
+    --secondary: #0d161b;
+    --accent: #5185a4;
+}
+
+
+
+/* General Page Stuff */
+
+body {
+    background-color: var(--background);
+}
+
+h1 {
+    color: var(--text);
+    font-family: 'Poppins', monospace;
+}
+
+
+p {
+    color: var(--text);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Flexbox Stuff */
+.header {
+    display: flex;
+
+}
+
+#hackedText {
+    font-size: 40px;
+}
+
+
+
+
+/* Dracula Themed links */
+
+a:hover {
+    color: var(--accent);
+}
+
+
+a:visited {
+    color: var(--primary);
+}
+
+a:link {
+    color: var(--primary);
+}
+
+
+
+
+
+/* Dracula Themed Hamburger Menu */
+
+.linksInBurger {
+    padding: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a.menuText {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+}
+
+.menuListing {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 30%;
+    background-color: var(--secondary);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 0.2rem;
+    transition: 1s;
+}
+
+.menuListing:hover {
+    background-color: var(--accent);
+}
+
+
+.headerMenu {
+    height: 4rem;
+}
+
+.burger-wrapper {
+    cursor: pointer;
+}
+
+#meny {
+    background: var(--secondary);
+    opacity: 98%;
+    position: fixed;
+    right: 0;
+    transition-timing-function: cubic-bezier(10, 2, 3, 1);
+    transform: translateY(-50rem);
+    top: 0;
+    z-index: 0;
+    border-radius: 20px;
+    transition: 1s;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#menyAvPaa {
+    display: none;
+}
+
+#menyAvPaa:checked~#meny {
+    transform: translateX(0rem);
+}
+
+#burger {
+    position: fixed;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    right: 1.8rem;
+    top: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 99 !important;
+}
+
+
+
+#burger>div {
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    transition: 1s;
+    z-index: 999;
+}
+
+#menyAvPaa:checked~#burger>div {
+    background-color: var(--primary);
+}
+
+#menyAvPaa:hover~#burger>div {
+    background-color: var(--accent);
+}
+
+#menyAvPaa:checked~#burger>div:nth-child(1) {
+    transform: translateY(14px) rotate(45deg);
+}
+
+#menyAvPaa:checked~#burger>div:nth-child(2) {
+    opacity: 0;
+}
+
+#menyAvPaa:checked~#burger>div:nth-child(3) {
+    transform: translateY(-14px) rotate(-45deg);
+}
